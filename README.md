@@ -5,10 +5,10 @@ Lua bindings for selected Linux syscalls
 
 Functions
 ---------
-chroot(path)
-mount(source, target, [type, flags, data])
-umount(target, [flags])
-unshare(flags)
+* chroot(path)
+* mount(source, target, [type, flags, data])
+* umount(target, [flags])
+* unshare(flags)
 
 Examples
 --------
