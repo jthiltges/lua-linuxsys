@@ -29,5 +29,5 @@ install: all
 	mkdir -p            $(DESTDIR)/$(LUAPKG)
 	install $(NAME).lua $(DESTDIR)/$(LUAPKG)
 	mkdir -p            $(DESTDIR)/$(DOC)
-	install README      $(DESTDIR)/$(DOC)
+	install README.md   $(DESTDIR)/$(DOC)
 

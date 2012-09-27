@@ -42,6 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,-)
-%doc README
+%doc README.md
 %{lualibdir}/*
 %{luapkgdir}/*.lua
