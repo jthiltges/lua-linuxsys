@@ -10,10 +10,10 @@ mount(source, target, [type, flags, data])
 umount(target, [flags])
 unshare(flags)
 
-Example
--------
+Examples
+--------
 ```lua
-s = linuxsys
+s = require 'linuxsys'
 s.unshare(s.CLONE_NEWNS)
 s.mount("/dev/sda1", "/test", "ext4")
 s.mount("/tmp/a", "/tmp/b", nil, s.MS_BIND)
