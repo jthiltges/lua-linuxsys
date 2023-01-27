@@ -1,16 +1,16 @@
-%define luaver 5.1
+%define luaver 5.3
 %define lualibdir %{_libdir}/lua/%{luaver}
 %define luapkgdir %{_datadir}/lua/%{luaver}
 
 Name:           lua-linuxsys
-Version:        5.1.0
+Version:        5.3.0
 Release:        1%{?dist}
 Summary:        A Linux system library for Lua
 
 Group:          Development/Libraries
 License:        Public Domain
 URL:            https://github.com/jthiltges/lua-linuxsys
-Source0:        lua-linuxsys-5.1.0.tar.gz
+Source0:        lua-linuxsys-5.3.0.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:  lua >= %{luaver}, lua-devel >= %{luaver}
@@ -30,7 +30,7 @@ make %{?_smp_mflags}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT DOC=%{_defaultdocdir}/%{name}-%{version} LUALIB=%{lualibdir} LUAPKG=%{luapkgdir}
+make install DESTDIR=$RPM_BUILD_ROOT DOC=%{_defaultdocdir}/%{name} LUALIB=%{lualibdir} LUAPKG=%{luapkgdir}
 
 
 %check

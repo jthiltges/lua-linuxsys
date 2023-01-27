@@ -1,10 +1,10 @@
 DESTDIR=
-LUALIB=/usr/lib/lua/5.1
-LUAPKG=/usr/share/lua/5.1
+LUALIB=/usr/lib/lua/5.3
+LUAPKG=/usr/share/lua/5.3
 DOC=/usr/share/doc/lua-linuxsys
 
 NAME= linuxsys
-CFLAGS= $(WARN) -O2 -fPIC
+CFLAGS= $(WARN) -O2 -fPIC -g
 WARN= -ansi -pedantic -Wall
 
 LIB= $(NAME)_c
